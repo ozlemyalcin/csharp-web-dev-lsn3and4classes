@@ -5,6 +5,7 @@ namespace SchoolPractice
 {
     public class Course
     {
+        /* my study
         private List<string> courseName = new List<string>();
         private Dictionary<string, int> list = new Dictionary<string, int>();
 
@@ -23,6 +24,37 @@ namespace SchoolPractice
             get { return list; }
             set { list = value; }
         }
+        */
+
+
+
+        /*
+         * Name: string
+         * Length: int (numWeeks)
+         * Roster: List<??>
+         * NumCredits: double
+         */
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Length { get; set; }
+        public double NumCredits { get; set; }
+
+        public List<Student> Roster { get; set; }
+
+
+
+        public Course()
+        {
+
+        }
+
+
+       
+
+
+
+
+
 
 
     }

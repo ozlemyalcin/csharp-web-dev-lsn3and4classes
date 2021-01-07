@@ -13,7 +13,29 @@ namespace SchoolPractice
         public double Gpa { get; set; }
 
 
+        //Default Constructor option 1
+        public Student() { }
+
+        //Constructor option 2
+        public Student(string name, int id, int credits, double gpa)
+        {
+            this.Name = name;
+            this.StudentId = id;
+            this.NumberOfCredits = credits;
+            this.Gpa = gpa;
+        }
+
+
+        public void AddGrade(int numCredits, double grade)
+        {
+
+
+        }
+
+
     }
+
+
 
     
 }

@@ -8,6 +8,9 @@ namespace SchoolPractice
         public static void Main(string[] args)
         {
             // TODO: Instantiate your objects and test your exercise solutions with print statements here.
+
+            //ClassName variableName = new ClassName();
+
             Student newStudent = new Student();
             newStudent.Name = "Ozlem";
             newStudent.StudentId = 1234;
@@ -27,7 +30,36 @@ namespace SchoolPractice
             Console.WriteLine($"Instructor Name: {instructor.FirstName}\nLast Name:{instructor.LastName}\nSubject:{instructor.Subject}\nTeaching Years:{instructor.YearsTeaching}");
 
 
+            //Generate a new Course
+            Course math = new Course();
+            math.Id = 202;
+            math.Name = "Gemoetry";
+            math.Length = 17;
+            math.NumCredits = 4.0;
 
+            math.Roster = new List<Student>();
+
+            math.Roster.Add(newStudent);
+            math.Roster.Add(new Student("Ben", 104, 1, 3.80));
+            math.Roster.Add(new Student("Paul", 107, 2, 4.0));
+
+
+            //Print info about Course
+            Console.WriteLine($"{math.Name} ({math.Id})");
+            Console.WriteLine("Roster:");
+
+
+            foreach(Student student in math.Roster)
+            {
+                Console.WriteLine(student.Name);
+            }
+
+
+
+
+
+
+            /* my study
             Course newCourse = new Course();
             newCourse.studentNumber = 30;
             newCourse.List.Add("Python", 2);
@@ -50,6 +82,7 @@ namespace SchoolPractice
                 Console.WriteLine($" {person.Value} student chose {person.Key} classes");
 
             }
+            */
             
 
 
