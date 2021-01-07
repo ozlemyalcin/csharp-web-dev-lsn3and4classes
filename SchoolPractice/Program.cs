@@ -55,6 +55,17 @@ namespace SchoolPractice
             }
 
 
+            Course history = new Course();
+            history.Id = 205;
+            history.Name = "Intro to World History";
+            history.Length = 18;
+            history.NumCredits = 6.0;
+
+            history.AddStudent(new Student("Clark", 109, 3, 4.0));
+            history.AddStudent(new Student("Terry", 111, 1, 3.5));
+
+
+
 
 
 

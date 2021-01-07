@@ -45,6 +45,23 @@ namespace SchoolPractice
 
         public Course()
         {
+            this.Roster = new List<Student>();
+
+        }
+
+
+        public void AddStudent(Student student)
+        {
+
+            if(this.Roster == null)
+            {
+                this.Roster = new List<Student>();
+
+
+            }
+
+
+            this.Roster.Add(student);
 
         }
 
